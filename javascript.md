@@ -79,7 +79,7 @@ undefined
 a.innerHTML = "update heading";
 'update heading
 ```
-
+### Difference between InnerHTML, InnerText, TextContent
 | Feature              | **innerHTML**   | **innerText**     | **textContent**             |
 | -------------------- | --------------- | ----------------- | --------------------------- |
 | Returns              | HTML + text     | Visible text only | All text (including hidden) |
