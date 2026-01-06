@@ -1,5 +1,6 @@
 # BootStrap
 
+```
 <p class="text-muted">Muted text (gray)</p>
 <p class="text-primary">Primary text (blue)</p>
 <p class="text-success">Success text (green)</p>
@@ -12,3 +13,4 @@
 <p class="bg-info">Info background(skyblue)</p>
 <p class="bg-warning">Warning background(yellow)</p>
 <p class="bg-danger">Danger background(danger)</p>
+```
