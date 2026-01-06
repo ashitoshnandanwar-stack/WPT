@@ -52,3 +52,57 @@
 | `keydown`   | Key press   |
 | `submit`    | Form submit |
 | `load`      | Page load   |
+
+## how to access ?
+- using id, class, tagname
+- using getElementById, getElementByClassName, getElementByTagName
+- using  querySelectory, querySelectoryAll = in that #-for id, .-for class
+## how to update 
+- using getElementById and innerHTML
+```
+  let p = document.getElementById('fpara');
+undefined
+p.inert
+false
+p.innerHTML
+'First paragraph'
+p.innerHTML = "update paragraph";
+'update paragraph'
+p.innerHTML
+'update paragraph'
+```
+
+- using quryselector and innerhtml
+```
+let a = document.querySelector('#fheading');
+undefined
+a.innerHTML = "update heading";
+'update heading
+```
+
+| Feature              | **innerHTML**   | **innerText**     | **textContent**             |
+| -------------------- | --------------- | ----------------- | --------------------------- |
+| Returns              | HTML + text     | Visible text only | All text (including hidden) |
+| Reads HTML tags      |  Yes            |  No               |  No                         |
+| Interprets tags      |  Yes            |  No               |  No                         |
+| Includes hidden text |  No             |  No               |  Yes                        |
+| Affected by CSS      |  No             |  Yes              |  No                         |
+| Performance          | Slower          | Slowest           | Fastest                     |
+| Security risk        |  XSS possible   | Safe              | Safe                        |
+
+### how to append child
+```
+let bodyTag = document.querySelector('body');
+undefined
+bodyTag
+<body>​…​</body>​
+let head = document.createElement('h1');
+undefined
+head
+<h1>​</h1>​
+head.textContent = "my name is ashitosh";
+'my name is ashitosh'
+head
+<h1>​my name is ashitosh​</h1>​
+bodyTag.appendChild('head');
+```
