@@ -78,3 +78,13 @@ For Background
 | `btn-success` | Success     | green       |
 | `btn-danger`  | Danger      | red         |
 | `btn-warning` | Warning     | yellow      |
+
+```
+🎯 Final CCEE Tips (Last Revision)
+
+✔ d-none → hide elements
+✔ fixed-top → navbar fixed
+✔ container-fluid → full width
+✔ Panels/Wells → replaced by Cards
+✔ Bootstrap 5 → no jQuery
+```
