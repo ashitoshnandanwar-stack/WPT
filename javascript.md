@@ -15,6 +15,8 @@
 | Async handling | Promise         |
 | NaN            | Not a Number    |
 
+<hr>
+
 ## DOM (Document Object Model)
 ### What is DOM?
 - DOM is a tree-like representation of a web page that allows JavaScript to manipulate HTML and CSS.
@@ -106,6 +108,8 @@ head
 <h1>​my name is ashitosh​</h1>​
 bodyTag.appendChild('head');
 ```
+<hr>
+
 
 ## 📌 JSON (JavaScript Object Notation)
 ```
@@ -175,3 +179,132 @@ $.get("data.json", function(data) {
   console.log(data.name);
 });
 ```
+
+<hr>
+
+## 📌 jQuery
+```
+🔹 What is jQuery?
+jQuery is a fast, lightweight JavaScript library that simplifies:
+DOM manipulation
+Event handling
+AJAX
+Animations
+📌 Motto: “Write less, do more”
+
+🔹 jQuery Syntax
+$(selector).action();
+
+Example:
+$("#btn").click(function() {
+  alert("Clicked");
+});
+
+🔹 jQuery Selectors (VERY IMPORTANT)
+Basic Selectors
+$("#id")  ----- for id
+$(".class")  ----- for class
+$("p")  ------for tag
+
+Attribute Selector
+$("input[type='text']")
+```
+
+### jQuery Event
+```
+✅ Why jQuery Events?
+Cross-browser compatibility
+Short and clean syntax
+Easy event binding & unbinding
+Supports event delegation
+
+🔹 Basic Event Syntax
+$(selector).eventName(function(){
+    // code to execute
+});
+
+Example
+$("#btn").click(function(){
+    alert("Button clicked!");
+});
+
+🖱️ Mouse Events
+| Event          | Description                  |
+| -------------- | ---------------------------- |
+| `click()`      | When mouse button is clicked |
+| `dblclick()`   | Double click                 |
+| `mouseenter()` | Mouse enters element         |
+| `mouseleave()` | Mouse leaves element         |
+| `hover()`      | Combination of enter + leave |
+| `mousedown()`  | Mouse button pressed         |
+| `mouseup()`    | Mouse button released        |
+
+⌨️ Keyboard Events
+| Event        | Description                  |
+| ------------ | ---------------------------- |
+| `keydown()`  | Key pressed                  |
+| `keyup()`    | Key released                 |
+| `keypress()` | Key pressed (character keys) |
+
+📝 Form Events
+| Event      | Description         |
+| ---------- | ------------------- |
+| `submit()` | Form submission     |
+| `change()` | Value changed       |
+| `focus()`  | Element gets focus  |
+| `blur()`   | Element loses focus |
+
+
+```
+$(document).ready(function(){
+
+    $('p').click(function(){
+    alert("clicked")
+  })
+
+  // $('#btn').dblclick(function(){
+  //   alert("clicked on button")
+  // })
+  // $('#btn').click(function(){
+  //     console.log("hover")
+  // })
+
+  // $('#btn').mouseenter(function(){
+  //     console.log("hover")
+  // })
+
+  // $('#btn').hover(function(){
+  //     console.log("hover")
+  // })
+  //hover = two ho
+
+  //Event in jquery
+  //mouse - click, dblclick, hover
+
+
+  // $('#para').hide(2000);
+  // $('#para').show(2000);
+
+  // $('#btn').click(function(){
+  //     $('#para').hide(12000);
+  //        $('#para').show(12000);
+  // })
+
+
+  // $('#para').slideUp(2000);
+  // $('#para').slideDown(2000);
+ // $('#para').slideToggle(2000);
+
+//  $('#para').animate({opacity:0.3}, 3000)
+//  
+ //$('#para').css('background-color','red')
+
+$('#btn').click(function(){
+ $('#para').css('background-color','red')
+})
+
+$('#inp').val('nandanwar');  //change text
+ })
+
+
+ ```
