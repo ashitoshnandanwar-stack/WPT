@@ -227,7 +227,7 @@ Example
 $("#btn").click(function(){
     alert("Button clicked!");
 });
-
+```
 🖱️ Mouse Events
 | Event          | Description                  |
 | -------------- | ---------------------------- |
