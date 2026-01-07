@@ -262,49 +262,51 @@ $(document).ready(function(){
     alert("clicked")
   })
 
-  // $('#btn').dblclick(function(){
-  //   alert("clicked on button")
-  // })
-  // $('#btn').click(function(){
-  //     console.log("hover")
-  // })
+  $('#btn').dblclick(function(){
+    alert("clicked on button")
+  })
+  $('#btn').click(function(){
+      console.log("hover")
+  })
 
-  // $('#btn').mouseenter(function(){
-  //     console.log("hover")
-  // })
+  $('#btn').mouseenter(function(){
+      console.log("hover")
+  })
 
-  // $('#btn').hover(function(){
-  //     console.log("hover")
-  // })
-  //hover = two ho
+  $('#btn').hover(function(){
+      console.log("hover")
+  })
+  hover = two ho
 
-  //Event in jquery
-  //mouse - click, dblclick, hover
-
-
-  // $('#para').hide(2000);
-  // $('#para').show(2000);
-
-  // $('#btn').click(function(){
-  //     $('#para').hide(12000);
-  //        $('#para').show(12000);
-  // })
+  Event in jquery
+  mouse - click, dblclick, hover
 
 
-  // $('#para').slideUp(2000);
-  // $('#para').slideDown(2000);
- // $('#para').slideToggle(2000);
+  $('#para').hide(2000);
+  $('#para').show(2000);
 
-//  $('#para').animate({opacity:0.3}, 3000)
-//  
- //$('#para').css('background-color','red')
+  $('#btn').click(function(){
+      $('#para').hide(12000);
+         $('#para').show(12000);
+  })
+
+
+  $('#para').slideUp(2000);
+  $('#para').slideDown(2000);
+ $('#para').slideToggle(2000);
+
+ $('#para').animate({opacity:0.3}, 3000)
+ 
+ $('#para').css('background-color','red')
 
 $('#btn').click(function(){
  $('#para').css('background-color','red')
 })
 
-$('#inp').val('nandanwar');  //change text
+$('#inp').val('nandanwar');  
  })
 
+
+ 
 
  ```
