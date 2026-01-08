@@ -132,3 +132,15 @@ function showEvent(e) {
 | `onSubmit`    | Form submission |
 | `onMouseOver` | Mouse hover     |
 | `onKeyDown`   | Keyboard input  |
+
+<hr>
+
+## Conditional Rendering
+
+| Method        | Use Case        |
+| ------------- | --------------- |
+| `if–else`     | Complex logic   |
+| Ternary `? :` | Two conditions  |
+| `&&`          | Show or hide    |
+| State-based   | Dynamic UI      |
+| Switch        | Multiple states |
