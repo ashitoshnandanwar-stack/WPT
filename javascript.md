@@ -437,6 +437,137 @@ $.get("data.json", function(data) {
 
 <hr>
 
+### 🔄 AJAX – Asynchronous JavaScript and XML
+- AJAX allows a web page to communicate with the server in the background without reloading the page.
+```
+With AJAX, we can:
+Fetch data from server
+Send data to server
+Update part of a page dynamically
+
+ Example uses:
+Search suggestions
+Live form validation
+Loading data without refresh
+```
+
+🧩 AJAX Framework & Architecture
+```
+AJAX works in this flow:
+
+Browser (UI)
+   |
+JavaScript
+   |
+XMLHttpRequest / Fetch / Axios
+   |
+Web Server / Web Service (API)
+   |
+Database
+
+
+Steps:
+User performs an action (click, type)
+JavaScript sends a request to server
+Server processes and returns data (JSON/XML)
+Page updates without reload
+```
+
+🌐 Web Services & AJAX
+```
+A Web Service (API) provides data to clients.
+REST APIs return data in JSON
+AJAX consumes this data
+Example API response:
+{ "name": "Amit", "city": "Pune" }
+
+AJAX fetches this and updates the UI.
+```
+⚙️ AJAX using jQuery
+```
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<button id="btn">Load Data</button>
+<div id="out"></div>
+
+<script>
+$("#btn").click(function () {
+  $.ajax({
+    url: "data.json",
+    success: function (res) {
+      $("#out").text(res.name);
+    }
+  });
+});
+</script>
+
+
+Common jQuery methods:
+$.ajax()
+$.get()
+$.post()
+```
+
+<hr>
+
+🚀 Axios – Promise-based HTTP Client
+- Axios is a modern library to make HTTP requests.
+```
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+🔹 Basic Request
+axios.get("https://api.example.com/users")
+  .then(res => {
+    console.log(res.data);
+  });
+
+🔹 Axios Instance & Config
+const api = axios.create({
+  baseURL: "https://api.example.com",
+  timeout: 5000,
+  headers: { "Content-Type": "application/json" }
+});
+
+api.get("/users");
+
+🔹 Handling Request & Response
+axios.post("/save", { name: "Amit" })
+  .then(response => {
+    console.log("Success:", response.data);
+  });
+
+🔹 Handling Errors
+axios.get("/wrong-url")
+  .then(res => {
+    console.log(res.data);
+  })
+  .catch(err => {
+    console.log("Error:", err.message);
+  });
+
+
+You can also use async/await:
+
+try {
+  let res = await axios.get("/users");
+  console.log(res.data);
+} catch (e) {
+  console.log("Failed:", e.message);
+}
+
+Summary
+AJAX → Background server communication
+Architecture → Browser → JS → Server → Response
+Web Services → APIs provide data
+jQuery AJAX → $.ajax()
+Axios → Promise-based modern HTTP client
+
+Supports:
+Config
+Request/Response handling
+Error handling
+```
+
 ## 📌 jQuery
 ```
 🔹 What is jQuery?
