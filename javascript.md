@@ -34,6 +34,69 @@ console.log(n.toFixed(1))  //12.6
 console.log(parseInt(n))   //12
 console.log(parseFloat(n))  //12.567
 ```
+🔹 Dates & Date Methods
+```
+let d = new Date();
+
+d.getFullYear();      // Year (e.g., 2026)
+d.getMonth();         // Month (0-11, Jan=0)
+d.getDate();          // Day of month (1-31)
+d.getDay();           // Day of week (0-6, Sun=0)
+d.getHours();         // Hours (0-23)
+d.getMinutes();       // Minutes (0-59)
+d.getSeconds();       // Seconds (0-59)
+d.getMilliseconds();  // Milliseconds (0-999)
+d.getTime();          // Timestamp (milliseconds since Jan 1, 1970)
+```
+1. Simple Methods
+```
+let d = new Date();
+
+// Full date and time
+console.log(d);  
+// Mon Jan 12 2026 15:30:45 GMT+0530 (India Standard Time)
+
+console.log(d.toString());
+// Mon Jan 12 2026 15:30:45 GMT+0530 (India Standard Time)
+
+// Date only
+console.log(d.toDateString());
+// Mon Jan 12 2026
+
+// Time only
+console.log(d.toTimeString());
+// 15:30:45 GMT+0530 (India Standard Time)
+```
+2. Locale-Specific (User-friendly)
+```
+let d = new Date();
+
+console.log(d.toLocaleString());
+// 1/12/2026, 3:30:45 PM
+
+console.log(d.toLocaleDateString());
+// 1/12/2026
+
+console.log(d.toLocaleTimeString());
+// 3:30:45 PM
+```
+
+🔹 Arrays & Array Methods
+```
+let arr = [10, 20, 30];
+
+arr.push(40);      // add at end [10 20 30 40]
+arr.pop();         // remove last [10 20 30]
+arr.shift();       // remove first [20 30]
+arr.unshift(5);    // add at start [5 20 30]
+console.log(arr.length);        // size [3]
+console.log(arr.join(","));     // "5,20,30"
+
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
+
+```
 
 <hr>
 
