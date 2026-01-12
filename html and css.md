@@ -12,6 +12,8 @@ Specificity of selectors matter more than the style location when cmparing inter
 
 ## CSS Box Model
 
+In CSS, every HTML element is treated as a rectangular box.
+```
 +-----------------------+
 |        Margin         |
 |  +-----------------+  |
@@ -24,3 +26,11 @@ Specificity of selectors matter more than the style location when cmparing inter
 |  |  +-----------+  |  |
 |  +-----------------+  |
 +-----------------------+
+
+
+🔹 Parts of the Box Model
+Content – Actual text/image inside the element
+Padding – Space between content and border
+Border – Line around padding and content
+Margin – Space outside the border (distance from other elements)
+```
