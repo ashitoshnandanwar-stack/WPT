@@ -15,6 +15,26 @@
 | Async handling | Promise         |
 | NaN            | Not a Number    |
 
+🔹 Strings & String Methods
+```
+let s = "JavaScript";
+s.length        // 10
+s.toUpperCase() // "JAVASCRIPT"
+s.toLowerCase() // "javascript"
+s.charAt(0)     // "J"
+s.indexOf("S")  // 4
+s.slice(0,4)    // "Java"
+```
+
+🔹 Numbers & Number Methods
+```
+let n = 12.567;
+
+console.log(n.toFixed(1))  //12.6
+console.log(parseInt(n))   //12
+console.log(parseFloat(n))  //12.567
+```
+
 <hr>
 
 ## DOM (Document Object Model)
