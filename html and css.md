@@ -52,3 +52,10 @@ Margin – Space outside the border (distance from other elements)
 | `<del>`    | Deleted text        | `<del>Old</del>`             |
 | `<ins>`    | Inserted text       | `<ins>New</ins>`             |
 
+```
+In Array:
+push() – adds elements to the same array (modifies original)
+pop() – removes last element from the same array
+shift() – removes first element from the same array
+map() – creates and returns a new array without changing the original
+```
