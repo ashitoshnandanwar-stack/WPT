@@ -144,3 +144,71 @@ function showEvent(e) {
 | `&&`          | Show or hide    |
 | State-based   | Dynamic UI      |
 | Switch        | Multiple states |
+
+<hr>
+
+## 🛡️ Error Boundaries (in React)
+
+- Error Boundaries are special React components that catch JavaScript errors in their child component tree and display a fallback UI instead of crashing the whole app.
+
+- They catch errors in: Rendering, Lifecycle methods, Constructors of child components
+
+<hr>
+
+## 🧩 Composition vs. Inheritance
+
+- In React, Composition is preferred over Inheritance.
+
+🔹 Composition
+- Build components by combining other components.
+```
+function Card({ children }) {
+  return <div className="card">{children}</div>;
+}
+
+<Card>
+  <h3>Title</h3>
+  <p>Content</p>
+</Card>
+
+
+This pattern is called Containment – passing content using children.
+```
+
+🔹 Inheritance
+- Extending a base class.
+```
+class A extends React.Component {}
+class B extends A {}
+
+
+React rarely needs this. Composition is more flexible.**
+```
+*Types of Composition*
+1️⃣Containment
+```
+A component “contains” others.
+
+function Dialog({ title, children }) {
+  return (
+    <div>
+      <h2>{title}</h2>
+      {children}
+    </div>
+  );
+}
+```
+
+2️⃣ Specialization
+- A specific version of a generic component.
+```
+function WelcomeDialog() {
+  return (
+    <Dialog title="Welcome">
+      Hello User!
+    </Dialog>
+  );
+}
+```
+
+<hr>
