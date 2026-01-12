@@ -100,6 +100,164 @@ for (let i = 0; i < arr.length; i++) {
 
 <hr>
 
+🔹 Function Definition
+```
+A function is a block of code that performs a task.
+
+function add(a, b) {
+  return a + b;
+}
+```
+🔹 Function Parameters
+```
+Values passed to a function.
+
+function greet(name) {
+  console.log("Hello " + name);
+}
+```
+🔹 Function Closures
+```
+A closure is a function that remembers variables of its outer function.
+
+function outer() {
+  let x = 10;
+  return function inner() {
+    return x;
+  };
+}
+
+let f = outer();
+console.log(f()); // 10
+```
+<hr>
+
+### 🧱 Objects in JavaScript
+🔹 Object Definition
+```
+let student = {
+  name: "Amit",
+  age: 20,
+  show: function () {
+    console.log(this.name);
+  }
+};
+```
+🔹 Object Properties & Methods
+```
+Properties: name, age
+
+Method: show()
+console.log(student.name);
+student.show();
+```
+🔹 Object Prototype
+```
+All JS objects inherit from a prototype.
+
+function Person(name) {
+  this.name = name;
+}
+
+Person.prototype.sayHi = function () {
+  console.log("Hi " + this.name);
+};
+
+let p = new Person("Ravi");
+p.sayHi();
+```
+
+
+<hr>
+
+## 🧠 Object Oriented Programming in JavaScript
+
+- JavaScript supports OOP using classes and prototypes.
+```
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+
+  speak() {
+    console.log(this.name + " makes a sound");
+  }
+}
+```
+
+🔹 OOP Concepts
+1️⃣ Method
+```
+A function inside a class/object.
+
+speak() {
+  console.log("Hello");
+}
+```
+2️⃣ Constructor
+```
+Special method to initialize object.
+
+constructor(name) {
+  this.name = name;
+}
+```
+3️⃣ Inheritance
+```
+One class acquires properties of another.
+
+class Dog extends Animal {
+  speak() {
+    console.log(this.name + " barks");
+  }
+}
+```
+4️⃣ Encapsulation
+```
+Wrapping data and methods together.
+
+class Account {
+  #bal = 0;   // private field
+
+  deposit(a) {
+    this.#bal += a;
+  }
+
+  getBalance() {
+    return this.#bal;
+  }
+}
+```
+5️⃣ Abstraction
+```
+Showing only essential features.
+
+class Shape {
+  area() {
+    throw "Implement in child";
+  }
+}
+```
+6️⃣ Polymorphism
+```
+Same method, different behavior.
+
+let a = new Animal("Cat");
+let d = new Dog("Tom");
+
+a.speak(); // Cat makes a sound
+d.speak(); // Tom barks
+```
+```
+✅ Child class can override parent methods
+✅ Use super.methodName() to call parent method
+✅ Constructor must call super() if parent has constructor
+✅ Properties can also be overridden
+Summary: JavaScript fully supports method and property overriding through class inheritance!
+```
+
+<hr>
+
 ## DOM (Document Object Model)
 ### What is DOM?
 - DOM is a tree-like representation of a web page that allows JavaScript to manipulate HTML and CSS.
