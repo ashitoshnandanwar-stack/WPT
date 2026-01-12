@@ -49,6 +49,7 @@ Mobile
 ```
 📊 Grid Classes
 - Bootstrap provides different column classes for different screen sizes:
+  
 | Class Prefix | Device                |
 | ------------ | --------------------- |
 | `col-`       | Extra small (default) |
