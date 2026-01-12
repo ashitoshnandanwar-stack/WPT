@@ -34,3 +34,21 @@ Padding – Space between content and border
 Border – Line around padding and content
 Margin – Space outside the border (distance from other elements)
 ```
+
+## 🎨 HTML Style Tags
+- HTML provides some built-in style (formatting) tags to change the appearance of text. These were widely used before CSS became popular.
+
+| Tag        | Purpose             | Example                      |
+| ---------- | ------------------- | ---------------------------- |
+| `<b>`      | Bold text           | `<b>Bold</b>`                |
+| `<i>`      | Italic text         | `<i>Italic</i>`              |
+| `<u>`      | Underline           | `<u>Underline</u>`           |
+| `<strong>` | Important (bold)    | `<strong>Important</strong>` |
+| `<em>`     | Emphasized (italic) | `<em>Emphasis</em>`          |
+| `<mark>`   | Highlight text      | `<mark>Mark</mark>`          |
+| `<small>`  | Small text          | `<small>Small</small>`       |
+| `<sup>`    | Superscript         | `x<sup>2</sup>`              |
+| `<sub>`    | Subscript           | `H<sub>2</sub>O`             |
+| `<del>`    | Deleted text        | `<del>Old</del>`             |
+| `<ins>`    | Inserted text       | `<ins>New</ins>`             |
+
