@@ -255,6 +255,20 @@ d.speak(); // Tom barks
 ✅ Properties can also be overridden
 Summary: JavaScript fully supports method and property overriding through class inheritance!
 ```
+*Regular Expression*
+| Regular Expression    | Meaning / Purpose                     | Example Use Case          | Sample Match |
+| --------------------- | ------------------------------------- | ------------------------- | ------------ |
+| `^[A-Za-z]+$`         | Only alphabets                        | Name field                | `Rahul`      |
+| `^[0-9]+$`            | Only digits                           | Roll No / Age             | `12345`      |
+| `^[A-Za-z0-9]+$`      | Alphabets and numbers                 | Username                  | `user123`    |
+| `^\d{10}$`            | Exactly 10 digits                     | Mobile number             | `9876543210` |
+| `^[A-Za-z ]+$`        | Alphabets with spaces                 | Full Name                 | `Amit Kumar` |
+| `^\w+@\w+\.\w+$`      | Basic email format                    | Email address             | `a@b.com`    |
+| `^\d{6}$`             | Exactly 6 digits                      | PIN code                  | `440001`     |
+| `^.{8,}$`             | Minimum 8 characters                  | Password length           | `pass@123`   |
+| `^[A-Z][a-z]+$`       | Starts with capital, then small chars | Proper Noun / Name format | `India`      |
+| `^\d{2}/\d{2}/\d{4}$` | Date in DD/MM/YYYY format             | Date input (text-based)   | `12/01/2026` |
+
 
 <hr>
 
