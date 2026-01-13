@@ -208,7 +208,7 @@ For Background
 ## 🔘 4. Buttons
 
 | **Class**      | **Purpose** | **Colour**  |
-| ------------- -| ----------- | ----------- |
+| ---------------| ----------- | ----------- |
 | `btn`          | Base button | no color    |
 | `btn-primary`  | Main action | blue        |
 | `btn-success`  | Success     | green       |
