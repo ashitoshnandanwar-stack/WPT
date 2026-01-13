@@ -206,6 +206,7 @@ For Background
 | `alert-info`    | Information |
 
 ## 🔘 4. Buttons
+
 | **Class**      | **Purpose** | **Colour**  |
 | ------------- -| ----------- | ----------- |
 | `btn`          | Base button | no color    |
